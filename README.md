@@ -18,31 +18,31 @@
 Install dependencies:
 
 ```
-npm install
+yarn
 ```
 
 Run development server:
 
 ```
-npm run dev
+yarn dev
 ```
 
 Build for produciton:
 
 ```
-npm run build
+yarn build
 ```
 
 Run ESLint:
 
 ```
-npm run lint
+yarn lint
 ```
 
 Lint and fix:
 
 ```
-npm run lint:fix
+yarn lint:fix
 ```
 
 ## Contributing
