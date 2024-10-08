@@ -7,6 +7,26 @@
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite Typescript + Tailwind Starter</title>
+  <!-- Load Fourdotzero SDK -->
+  <script
+    defer
+    src="https://sdk.fourdotpay.io/fdz-sdk-js/dist/fdz-sdk.js?ver=0.0.17"
+  />
+  <!-- End Load Fourdotzero SDK -->
+  <!-- Fourdotzero SDK Configuration -->
+  <script>
+    window.addEventListener("load", function () {
+    window.fdzSDK.initConfig({
+    siteName: "Welcome to Fourdotzero Demo",
+    siteAddress: "demo.fourdotpay.io",
+    siteUrl: "https://demo.fourdotpay.io",
+    contentPrefix: "fdp-demo",
+    accountId: "barringtom$fourdotpay.io",
+    accountType: "BUSINESS",
+    });
+    });
+  </script>
+  <!-- Fourdotzero SDK Configuration -->
 </head>
 
 <body class="font-sans bg-gray-50">

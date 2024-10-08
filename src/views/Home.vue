@@ -5,16 +5,16 @@
   >
     <div
       aria-hidden="true"
-      class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+      class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40"
     >
-      <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700" />
-      <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600" />
+      <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400" />
+      <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300" />
     </div>
     <div class="px-6">
       <div class="relative ml-auto">
         <div class="lg:w-full mx-auto mt-16">
-          <h1 class="text-gray-900 dark:text-white font-bold text-4xl md:text-4xl xl:text-4xl">
-            <span class="text-primary dark:text-white">Pop-Ups or Paywalls:</span> Is This the Best We Can Do?
+          <h1 class="text-gray-900 font-bold text-4xl md:text-4xl xl:text-4xl">
+            <span class="text-primary">Pop-Ups or Paywalls:</span> Is This the Best We Can Do?
           </h1>
           <div class="mt-6 flex">
             <div class="bg-gray-100 p-4 rounded-xl">
