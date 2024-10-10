@@ -16,7 +16,7 @@
       </div>
       <div class="relative ml-auto max-w-7xl mx-auto">
         <div class="lg:w-full mx-auto mt-20">
-          <h1 class="text-gray-900 font-bold text-4xl md:text-4xl xl:text-4xl">
+          <h1 class="text-gray-900 font-bold text-4xl md:text-4xl xl:text-4xl merriweather-regular">
             Micropayments Revolutionise Revenue for News and Content Industries
           </h1>
           <div class="mt-2 text-gray-600">
@@ -27,7 +27,7 @@
             <span class="text-gray-300">Related Topics:</span> <span>Pay-per-view | New Internet Payment Fabric</span>
           </div>
           <div class="mt-8 bottom-overflow-fade">
-            <p class="text-2xl">
+            <p class="text-2xl merriweather-bold">
               Fourdotzero's 1% pay-per-use model is a game-changer. It empowers newspapers and creators to sell digital content without ads or subscriptions on a pay-per-use basis.
               This model opens up new possibilities and revenue streams, inspiring a hopeful future for the news and content industries.
             </p>
@@ -55,15 +55,15 @@
             data-content-title="Article"
             data-content-type="html"
           >
-            <p class="mt-6">
+            <p class="mt-6 merriweather-regular">
               Currently, casual online commercial relationships are not possible online; subscriptions require effort, whilst ads create noise. These friction points are destroying newspapers and content creators who cannot make it pay with ads or win subscriptions. Even the New York Times, a winner in the subscription space with ten million subscribers, leaves most of its two billion annual viewers with little choice to enjoy premium content. 
             </p>
-            <p class="mt-6">
+            <p class="mt-6 merriweather-regular">
               Fourdotzero is changing this by offering a pay-per-use model that eliminates the need for intrusive ads, reduces user entry barriers, and provides a more sustainable revenue stream for creators.As global demand for low-cost transactions grows, Fourdotzero stands at the forefront of a burgeoning market, where 62% of payments fall below $25. UK household expenditure alone accounts for £213 billion annually in sub-£20 purchases, while Europe sees €2 trillion in similar transactions. With increasing concerns about platform algorithm changes and reliance on digital storefronts, businesses are seeking ways to retain complete control of their audience and revenue. Fourdotzero allows creators to monetise content down to minor transactions, providing immediate payouts and pay-per-use alternatives to subscription models.CEO Richard Bell emphasises that creators want ownership of their audience, protection from unpredictable algorithm and commercial changes, and an alternative to high platform fees. Fourdotzero, with its simple and fast integration, offers a solution that businesses of all sizes can confidently adopt, knowing that they are building their business and revenue on a firm, sustainable foundation.
             </p>
           </div>
           <!-- -->
-          <div class="mt-16 text-white flex flex-wrap bg-black rounded-xl px-48 py-16">
+          <div class="mt-16 text-white flex flex-wrap bg-black rounded-xl px-48 py-16 manrope-regular">
             <h3 class="text-2xl">
               Fourdotzero is Bridging Global Connections Our cutting-edge network seamlessly connects buyers and sellers across the globe. From Boston to Bangkok, we're shrinking the world one transaction at a time.
             </h3>
@@ -172,5 +172,60 @@ export default defineComponent({
 
 .fdz-widget {
   margin: auto;
+}
+
+.merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-black {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.merriweather-light-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.merriweather-regular-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.merriweather-bold-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.merriweather-black-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.manrope-regular {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 </style>

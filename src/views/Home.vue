@@ -1,7 +1,7 @@
 <template>
   <div
     id="home"
-    class="relative max-w-7xl mx-auto"
+    class="relative max-w-7xl mx-auto manrope-regular"
   >
     <div
       aria-hidden="true"
@@ -59,3 +59,12 @@ export default defineComponent({
   },
 })
 </script>
+
+<style>
+.manrope-regular {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
