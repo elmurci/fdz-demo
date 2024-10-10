@@ -26,11 +26,35 @@
             <span class="text-sm mx-4">•</span> 
             <span class="text-gray-300">Related Topics:</span> <span>Pay-per-view | New Internet Payment Fabric</span>
           </div>
-          <div class="mt-8">
+          <div class="mt-8 bottom-overflow-fade">
             <p class="text-2xl">
               Fourdotzero's 1% pay-per-use model is a game-changer. It empowers newspapers and creators to sell digital content without ads or subscriptions on a pay-per-use basis.
               This model opens up new possibilities and revenue streams, inspiring a hopeful future for the news and content industries.
             </p>
+          </div>
+          <!-- Add the checkout widget to the page -->
+          <div
+            class="mt-8"
+            data-fdz-sdk-widget="checkout"
+            data-title="Checkout"
+            data-description="You'll learn a lot from this Video lesson"
+          >
+            <!-- Add buy button widgets for single content purchase -->
+            <div
+              data-fdz-sdk-widget="buy_button"
+              data-content-ids="5bac0236-6407-415a-969c-66bb14f65a1b"
+              data-content-price="2.99"
+              data-content-title="article"
+            />
+            <!-- END buy button -->
+          </div>
+          <!-- END checkout widget -->
+          <div
+            data-fdz-sdk-widget="content"
+            data-content-id="5bac0236-6407-415a-969c-66bb14f65a1b"
+            data-content-title="Article"
+            data-content-type="html"
+          >
             <p class="mt-6">
               Currently, casual online commercial relationships are not possible online; subscriptions require effort, whilst ads create noise. These friction points are destroying newspapers and content creators who cannot make it pay with ads or win subscriptions. Even the New York Times, a winner in the subscription space with ten million subscribers, leaves most of its two billion annual viewers with little choice to enjoy premium content. 
             </p>
@@ -122,5 +146,31 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   components: {
   },
+  mounted() {
+    let fourDotScript = document.createElement('script')
+    fourDotScript.setAttribute('src', 'https://sdk.fourdotpay.io/fdz-sdk-js/dist/fdz-sdk.js?ver=0.0.17') // url from file goes here
+    document.head.appendChild(fourDotScript)
+    window.addEventListener('load', function () {
+      (window as any).fdzSDK.initConfig({
+        siteName: 'Welcome to Fourdotzero Demo',
+        siteAddress: 'demo.fourdotpay.io',
+        siteUrl: 'https://demo.fourdotpay.io',
+        contentPrefix: 'fdp-demo',
+        accountId: 'barringtom$fourdotpay.io',
+        accountType: 'BUSINESS',
+      })
+    })
+  },
 })
 </script>
+
+<style>
+.bottom-overflow-fade {
+  mask-image: linear-gradient(to bottom, black 10%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 10%, transparent 100%);
+}
+
+.fdz-widget {
+  margin: auto;
+}
+</style>
