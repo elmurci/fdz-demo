@@ -1,11 +1,11 @@
 <template>
   <div
     id="home"
-    class="relative max-w-7xl mx-auto manrope-regular"
+    class="relative manrope-regular"
   >
-    <div class="px-6">
+    <div class="container mx-auto px-4 py-4 md:py-12">
       <div class="relative ml-auto">
-        <div class="lg:w-full mx-auto mt-16">
+        <div class="lg:w-full mx-auto">
           <h1 class="text-gray-900 font-bold text-4xl md:text-4xl xl:text-4xl">
             Pop-Ups or Paywalls: Is This the Best We Can Do?
           </h1>
